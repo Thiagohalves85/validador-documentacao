@@ -1,0 +1,86 @@
+site_name: Validador Fiscal Docs
+site_description: Documentação pública de regras de negócio e uso do Validador Fiscal
+docs_dir: docs
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/brand/mark.svg
+  favicon: assets/brand/mark.svg
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Alternar para modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Alternar para modo escuro
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+extra_css:
+  - assets/stylesheets/extra.css
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - assets/javascripts/mermaid-init.js
+nav:
+  - Validador Fiscal: index.md
+  - Fluxos:
+      - Validação de documentos: fluxos/validacao-de-documentos.md
+      - Tratamento de rejeições: fluxos/tratamento-de-rejeicoes.md
+      - Emissão de PDF: fluxos/emissao-de-pdf.md
+  - Operação:
+      - Cadastro e login: operacao/cadastro-e-login.md
+      - Upload de XML: operacao/upload-de-xml.md
+      - Validação: operacao/validacao.md
+      - Exportação de resultados: operacao/exportacao-de-resultados.md
+  - Regras de negócio:
+      - Visão geral das regras de negócio: regras/gerais/visao-geral.md
+      - Documentos suportados: regras/gerais/documentos-suportados.md
+      - Resultados e alertas: regras/gerais/resultados-e-alertas.md
+      - RTC: regras/tributacao/rtc.md
+      - NFS-e Nacional: regras/servicos/nfse.md
+  - Rejeições por documento:
+      - Índice de rejeições: rejeicoes/indice.md
+      - BP-e: rejeicoes/bpe.md
+      - CT-e: rejeicoes/cte.md
+      - DCe: rejeicoes/dce.md
+      - MDF-e: rejeicoes/mdfe.md
+      - NFS-e Nacional: rejeicoes/nfse.md
+  - FAQ:
+      - Dúvidas frequentes: faq/duvidas-frequentes.md
+      - Erros comuns: faq/erros-comuns.md
