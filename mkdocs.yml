@@ -68,6 +68,7 @@ nav:
       - Upload de XML: operacao/upload-de-xml.md
       - Validação: operacao/validacao.md
       - Exportação de resultados: operacao/exportacao-de-resultados.md
+      - Envio de XML e PDF por e-mail: operacao/envio-de-email.md
   - Regras de negócio:
       - Visão geral das regras de negócio: regras/gerais/visao-geral.md
       - Documentos suportados: regras/gerais/documentos-suportados.md

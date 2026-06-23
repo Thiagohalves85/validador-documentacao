@@ -46,6 +46,7 @@ flowchart TD
 
 - [Fluxos](fluxos/validacao-de-documentos.md)
 - [Operação](operacao/cadastro-e-login.md)
+- [Envio de e-mail](operacao/envio-de-email.md)
 - [Regras de negócio](regras/gerais/visao-geral.md)
 - [Documentos suportados](regras/gerais/documentos-suportados.md)
 - [Rejeições por documento](rejeicoes/indice.md)
